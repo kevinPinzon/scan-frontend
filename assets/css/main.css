@@ -3,7 +3,91 @@
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Raleway:400,800,900");
 
 
+/* home COMIENZO*/
+#homeBody{
+	background: url(../../images/imag5.png);
+	background-repeat:no-repeat;
+	background-size: 100% auto;
+	background-attachment: fixed;
+	background-position: center 0;
+}
+#dviPerfilHome{
+	position: fixed  ;
+	background: transparent;
+	background-repeat:no-repeat;
+	background-size: 100% auto;
+	background-attachment: fixed;
+	background-position: center 0;
+	margin-top: 40px;
+	
+}
+#h3PerfilHome{
+	color: white !important;
+	font-size: 1.45em;
+}
 
+#divNoticiasHome{	
+	color: white;
+	border: solid 2px rgba(160, 160, 160, 0.65);
+	background: url(../../images/background2.png);
+	opacity: 0.8;
+	background-repeat:no-repeat;
+	background-size: 100% auto;
+	background-attachment: fixed;
+	background-position: center 0;
+	margin-top: 40px;
+	padding-bottom: 10px;
+	height: 100%;
+	margin-bottom: 50px;
+
+}
+
+.noticia{
+	padding: 0px !important;
+	margin: 0px !important;
+}
+
+.imagenNotica{
+	border: solid 4px rgba(160, 160, 160, 0.65);
+	opacity: 0.99 !important;
+}
+
+.verMas{
+	margin-top: 20px;
+	border: solid 1px rgba(160, 160, 160, 0.65) !important;
+	font-size: 0.9em !important;
+
+}
+
+.verMas:hover{
+	background-color: rgba(255, 255, 255, 0.1) !important;
+	border: none !important;
+}
+
+
+
+
+.verNoticia{
+	margin-top: 20px;
+	border: solid 1px rgba(160, 160, 160, 0.65) !important;
+	font-size: 0.8em !important;
+
+}
+
+.verNoticia:hover{
+	background-color: rgba(255, 255, 255, 0.1) !important;
+	border: none !important;
+}
+
+
+#postHeader{
+	margin-bottom: 10px;
+}
+.h2Noticia{
+	color: white !important;
+}
+
+/* home FIN*/
 
 /* Perfil de usuario COMIENZO*/
 
@@ -108,7 +192,7 @@
 }
 #perfilBody{
 	background: url(../../images/estudio.png);
-	background-repeat:no repeat;
+	background-repeat:no-repeat;
 	background-size: 100% auto;
 	background-attachment: fixed;
 	background-position: center 0;
@@ -140,6 +224,10 @@
 	height:600px;
 	background: url(../../images/background2.png);
 	opacity: 0.9;
+	background-repeat:no-repeat;
+	background-size: 100% auto;
+	background-attachment: fixed;
+	background-position: center 0;
 }
 
 .hBanner{
@@ -271,8 +359,8 @@ input{
 	}
 
 	body {
-		background: url(../../images/background3.png);
-		background-repeat:no repeat;
+		background: url(../../images/imag3.png);
+		background-repeat:no-repeat;
 		background-size: 100% auto;
 		background-attachment: fixed;
 		background-position: center 0;
@@ -718,8 +806,7 @@ input{
 			button:disabled:before,
 			.button.disabled:before,
 			.button:disabled:before {
-				color: rgba(160, 160, 160, 0.3) !important;
-			}
+			}			
 
 /* Form */
 
@@ -1464,14 +1551,10 @@ input{
 /* Post */
 
 	.post {
-		padding: 1em 3em 1em 0em ;
 		background: transparent;
 		height: 750px;
 		position: relative;
 		margin-bottom: 50px;
-		border: solid 5px rgba(160, 160, 160, 0.5);
-
-
 	}
 
 		.post > header {
@@ -1496,8 +1579,9 @@ input{
 			}
 
 				.post > header .title h2 {
-					font-weight: 900;
-					font-size: 1.5em;
+					margin-left: 50px; 
+					font-weight: 700;
+					font-size: 1.2em;
 				}
 
 				.post > header .title > :last-child {
@@ -1521,7 +1605,7 @@ input{
 				}
 
 				.post > header .meta .published {
-					color: #3c3b3b;
+					color: white;
 					display: block;
 					font-family: "Raleway", Helvetica, sans-serif;
 					font-size: 0.7em;
@@ -1582,7 +1666,7 @@ input{
 					font-weight: 400;
 					letter-spacing: 0.25em;
 					line-height: 1;
-					margin: 0 0 0 2em;
+					margin: 0 0 0 1em;
 					padding: 0 0 0 2em;
 					text-transform: uppercase;
 				}
