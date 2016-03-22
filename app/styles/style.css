@@ -1,0 +1,38 @@
+#Navbar{
+	margin-top: -50px;
+	background-color: rgba(172,32,45,.6);
+	height: 60px;
+	border-top: 0px solid #000;
+	border-bottom: 0px solid #000;
+}
+
+#fondo_principal{
+	margin-top: 10%;
+	background-color: rgba(255,255,255,.6);
+	padding: 30px;
+}
+
+#imagen_principal{
+	margin-top: 10%;
+}
+
+#vernoticia{
+	background-color: rgba(255,255,255,.7);
+	height: 50px;
+}
+
+#divregistro{
+	text-align: center;
+	padding: 5%;
+	color: white;
+	border: solid 2px rgba(160, 160, 160, 0.65);
+	background: url(../../images/background2.png);
+	opacity: 0.8;
+	background-repeat:no-repeat;
+	background-size: 100% auto;
+	background-attachment: fixed;
+	background-position: center 0;
+	padding-bottom: 10%;
+	margin-top: 15%;
+	margin-left: 10%;
+}
