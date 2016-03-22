@@ -1,0 +1,22 @@
+<div ng-controller="ScanController">
+	<div id="divregistro" class="banner">
+				<form class="form-inline">
+					<label class="col-lg-5 registroLabel"> Nombre  </label>
+					<input id="nombreC" type="text" class=" form-control inputRegistro"  ng-model="user.name">
+				</form>
+				<form class="form-inline">
+					<label class="col-lg-5 registroLabel"> Email  </label>
+					<input id="correo" type="text" class=" form-control inputRegistro"  ng-model="user.mail">
+				</form>
+				<form class="form-inline">
+					<label class="col-lg-5 registroLabel"> Usuario </label>
+					<input id="nickN" type="text" class=" form-control inputRegistro"  ng-model="user.username">
+				</form>
+				<form class="form-inline">
+					<label class="col-lg-5 registroLabel"> Contraseña  </label>
+					<input id="contrasena" type="password" class=" form-control inputRegistro"  ng-model="user.password">
+				</form>
+				<a href="#"id="vernoticia" class="button special col-md-4 col-md-offset-4" ng-click="postUser()">Crear cuenta</a>
+			</article>
+		</div>
+	</div>

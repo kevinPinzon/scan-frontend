@@ -1,0 +1,95 @@
+<div ng-controller="ScanController" >
+<!-- perfil COMIENZO-->
+<div id="dviPerfilHome" class="col-md-2 col-md-offset-1">
+  <div >
+    <img id="imgPerfilHome" src="images/pic08.jpg"alt="logo" height="200px">
+  </div>
+  <div ng-show="$sessionStorage.currentUser">
+    <h3 id="h3PerfilHome">{{$sessionStorage.currentUser.username}}</h3>
+  </div>
+
+  <div >
+    <button type="button" id="buttonBiblioteca" class="btn btn-default">
+      <span class="glyphicon glyphicon-music" </span>
+    </button>
+    <label class="labelBasico">0 Canciones creadas</label>
+  </div>
+
+  <div >
+    <button type="button" id="buttonAmigos" class="btn btn-default">
+      <span class="glyphicon glyphicon-user" </span>
+    </button>
+    <label class="labelBasico">0 Amigos</label>
+  </div>
+
+  <div>
+    <button type="button" id="buttonEditar" class="btn btn-default">
+      <span class="glyphicon glyphicon-plus" </span>
+    </button>
+    <label class="labelBasico">Crear partitura</label>
+  </div>
+</div>
+
+<!-- perfil FINAL-->
+
+<!-- noticias COMIENZO -->
+<div id="divNoticiasHome" class="col-md-5 col-md-offset-4">
+<!-- Post -->
+  <article class="noticia post">
+    <header  id="postHeader">
+      <div class="title ">
+        <h2 class="h2Noticia">Nombre de la partitura</h2>
+      </div>
+      <div class="meta">
+        <time class="published" datetime="2015-11-01">mes dia, año</time>
+        <a href="#" class="author">
+          <span class="nickNameNoticas name">Ninckname</span>
+        </a>
+        <img src="images/avatar.jpg" alt="imagenPerfil" />
+      </div>
+    </header>
+
+      <a href="#" class="image featured">
+        <img class="imagenNotica" src="images/imag1.png" alt="imagenNoticaPost" >
+      </a>
+    <p id="descripcionCansion">breve desicripcion de la cancion</p>
+    <footer>
+      <ul class="actions">
+        <li><a href="#" id="vernoticia" class="col-md-12 button ">Ver noticia completa</a></li>
+      </ul>
+
+    </footer>
+  </article>
+
+  <!-- Post -->
+  <article class="noticia post">
+    <header  id="postHeader">
+      <div class="title ">
+        <h2 class="h2Noticia">Nombre de la partitura</h2>
+      </div>
+      <div class="meta">
+        <time class="published" datetime="2015-11-01">mes dia, año</time>
+        <a href="#" class="author">
+          <span class="nickNameNoticas name">Ninckname</span>
+        </a>
+        <img src="images/avatar.jpg" alt="imagenPerfil" />
+      </div>
+    </header>
+
+      <a href="#" class="image featured">
+        <img class="imagenNotica" src="images/imag1.png" alt="imagenNoticaPost" >
+      </a>
+    <p id="descripcionCansion">breve desicripcion de la cancion</p>
+    <footer>
+      <ul class="actions">
+        <li><a href="#" id="vernoticia" class="col-md-90 button ">Ver noticia completa</a></li>
+      </ul>
+
+    </footer>
+
+  </article>
+  <ul class="actions">
+    <li><a href="#" id="vernoticia" class="col-lg-12 col-lg-offset-11 button ">Ver mas noticias</a></li>
+  </ul>
+</div>
+</div>
