@@ -1,0 +1,33 @@
+<div ng-controller="ScanController">
+	<div id="divregistro" class="banner col-md-7 col-md-offset-2">
+				<div class="logoRegistro col-md-offset-4">
+					<img src="images/logo.png" alt="logo" height="160px">
+				</div>
+				<form class="form-inline">
+					<label class="col-lg-4 col-lg-offset-1 registroLabel">Primer nombre  </label>
+					<input id="nombreC" type="text" class=" form-control inputRegistro"  ng-model="user.name.first">
+				</form>
+				<form class="form-inline">
+					<label class="col-lg-4 col-lg-offset-1 registroLabel">Apellido  </label>
+					<input id="nombreC" type="text" class=" form-control inputRegistro"  ng-model="user.name.last">
+				</form>
+				<form class="form-inline">
+					<label class="col-lg-4 col-lg-offset-1 registroLabel">Usuario </label>
+					<input id="nickN" type="text" class=" form-control inputRegistro"  ng-model="user.username">
+				</form>
+				<form class="form-inline">
+					<label class="col-lg-4 col-lg-offset-1 registroLabel">Email  </label>
+					<input id="correo" type="text" class=" form-control inputRegistro"  ng-model="user.mail">
+				</form>
+				<form class="form-inline">
+					<label class="col-lg-4 col-lg-offset-1 registroLabel">Contraseña  </label>
+					<input id="contrasena" type="password" class=" form-control inputRegistro"  ng-model="user.password">
+				</form>
+				<form class="form-inline">
+					<label class="col-lg-4 col-lg-offset-1 registroLabel">Confirmar contraseña  </label>
+					<input id="contrasena" type="password" class=" form-control inputRegistro"  ng-model="user.password2">
+				</form>
+				<a href="#" class="buttonSpecial col-md-8 col-md-offset-2" ng-click="postUser()">Crear cuenta</a>
+			</article>
+		</div>
+	</div>
