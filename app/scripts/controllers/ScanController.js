@@ -1,7 +1,7 @@
 angular.module('AngularScaffold.Controllers')
 .controller('ScanController', ['$scope', 'ScanService', '$sessionStorage', '$location', function ($scope, ScanService, $sessionStorage, $location) {
   $scope.scores = [];
-  $scope.user = {};
+  $scope.user = {name:{first:undefined,last:undefined}};
   $scope.$sessionStorage = $sessionStorage;
 
   $scope.isAdmin = function(){
@@ -13,6 +13,7 @@ angular.module('AngularScaffold.Controllers')
   }
 
   $scope.postUser = function(){
+    alert($scope.user.name.first);
     $scope.user.scope="regular";
     ScanService.PostUser($scope.user).then(function(response){
     alert("usuario creado");

@@ -28,7 +28,7 @@
 	background-size: 100% auto;
 	background-attachment: fixed;
 	background-position: center 0;
-	margin-top: 10px;
+	margin-top: 40px;
 	padding-bottom: 10px;
 	height: 100%;
 	margin-bottom: 50px;
@@ -189,7 +189,7 @@
 }
 
 .Hmenu{
-	color: #460606 !important;
+	color: white !important;
 
 }
 
@@ -332,7 +332,7 @@ input{
 	}
 
 	body {
-		background: url(../../images/imag3.png);
+		background: url(../../images/imag4.png);
 		background-repeat:no-repeat;
 		background-size: 100% auto;
 		background-attachment: fixed;

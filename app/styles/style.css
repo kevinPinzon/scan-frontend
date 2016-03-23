@@ -16,23 +16,53 @@
 	margin-top: 10%;
 }
 
-#vernoticia{
-	background-color: rgba(255,255,255,.7);
-	height: 50px;
+.vernoticia{
+color: white !important;
+font-size: 1em !important;
+}
+#verMas{
+	width: 300px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: white;
+	font-size: 1em;
 }
 
 #divregistro{
-	text-align: center;
-	padding: 5%;
+	font-size: 0.9em;
+	padding-top: 30px;
+	padding-left: 0px;
+	padding-right: 0px;
 	color: white;
-	border: solid 2px rgba(160, 160, 160, 0.65);
-	background: url(../../images/background2.png);
-	opacity: 0.8;
+	border: solid 3px rgba(160, 160, 160, 0.65);
+	background: transparent;
 	background-repeat:no-repeat;
 	background-size: 100% auto;
 	background-attachment: fixed;
 	background-position: center 0;
-	padding-bottom: 10%;
-	margin-top: 15%;
-	margin-left: 10%;
+	padding-bottom: 50px !important;
+	margin-bottom: 70px;
+	margin-top: 120px;
+}
+.buttonSpecial{
+	margin-top: 20px;
+	text-align: center;
+	border: solid 2px rgba(160, 160, 160, 0.65);
+	font-size: 1.2em;
+	font-weight: 900;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: rgba(172,32,45,.9);
+}
+.buttonSpecial:hover{
+	font-size: 1.4em;
+	color: rgba(172,32,45,1);
+	border: solid 2.4px rgba(160, 160, 160, 1);
+}
+.logoRegistro{
+	margin-bottom: 50px;
+}
+.inputRegistro{
+	font-size: 1.1em !important;
+	font-weight: 600 !important;
 }

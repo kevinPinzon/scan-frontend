@@ -21,7 +21,9 @@
               <button type="submit" class="btn btn-default" ng-click="register()">Registrarse</button>
             </div>
             <div class="row">
-              <a class="fa-bars" href="#menu" ng-show="$sessionStorage.currentUser">Menu</a>
+              <a class="fa-bars" href="#menu" ng-show="$sessionStorage.currentUser">
+                  <span class="glyphicon glyphicon-menu-hamburger" </span>
+              </a>
             </div>
           </form>
         </div>
@@ -64,7 +66,7 @@
       <!-- Actions -->
       <section ng-controller="NavbarController">
         <ul class="actions vertical">
-          <li><a href="#" id="salir" class="button special" ng-click="logout()">Salir</a></li>
+          <li><a id="salir" class="button special" ng-click="logout()">Salir</a></li>
         </ul>
       </section>
     </section>
