@@ -25,4 +25,10 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
 	    		templateUrl: '/views/registro.html',
 	    		controller: 'ScanController'
 	    });
+			$stateProvider
+				.state('perfil', {
+					url: '/perfil',
+					templateUrl: '/views/perfil.html',
+					controller: 'ScanController'
+			});
 }])

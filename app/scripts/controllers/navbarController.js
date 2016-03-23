@@ -23,7 +23,6 @@ angular.module('AngularScaffold.Controllers')
           alert(err.data.error + " " + err.data.message);
         });
       }
-
       $scope.register = function(){
         $location.path('/registro');
       }

@@ -22,4 +22,7 @@ angular.module('AngularScaffold.Controllers')
       alert(err.data.error + " " + err.data.message);
     });
   }
+  $scope.perfil = function(){
+    $location.path('/perfil');
+  }
 }]);

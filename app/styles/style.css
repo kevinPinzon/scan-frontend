@@ -1,3 +1,12 @@
+#nickNameMenu{
+	font-size: 1.4em !important;
+}
+
+#imagMenu{
+	margin-top: 10px;
+	margin-right: 40px;
+}
+
 #Navbar{
 	margin-top: -50px;
 	background-color: rgba(172,32,45,.6);
