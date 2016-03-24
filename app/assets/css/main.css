@@ -2294,16 +2294,10 @@ input{
 
 /* Menu */
 
-#salir:hover{
-	background: #260606 !important;
-}
 #salir{
-	border: solid 1px rgba(160, 160, 160, 0.65);
-	font-size: 1em !important;
-	height: 60px;
-	width: 180px;
-	background: #460606 !important;
-	margin: 0px;
+	color: white;
+	font-weight: 600;
+	font-size: 1.2em;
 }
 	#menu {
 		-moz-transform: translateX(25em);
