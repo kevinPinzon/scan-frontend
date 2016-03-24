@@ -57,8 +57,6 @@
 	border: none !important;
 }
 
-
-
 #postHeader{
 	margin-bottom: 0px;
 }
@@ -70,19 +68,17 @@
 
 /* Perfil de usuario COMIENZO*/
 
-
-
 .botonesEstadoPerfil{
 	margin-left: 10px;
 }
 #h3Perfil{
 	font-size: 1.42em;
-	color: #C8BEBC !important;
+	color: white !important;
 	font-weight: bold;
 }
 #h4Perfil{
 	font-size: 1.25em;
-	color: #C8BEBC !important;
+	color: white !important;
 	font-weight: bold;
 }
 #buttonEditar,	#buttonAmigos, #buttonBiblioteca{
@@ -94,6 +90,7 @@
 }
 .labelBasico{
 	font-size: 1.15em;
+	color: white !important;
 }
 
 .labelInfoPersonal{
@@ -113,10 +110,10 @@
 
 #pestanas {
     float: top;
-    font-size: 1.25em;
+    font-size: 1.2em;
     font-weight: bold;
-		margin-left: 0px;
-		padding-left: 0px;
+		margin-left: 6px;
+		padding-left: 4px;
 }
 
 #pestanas li{
@@ -131,14 +128,15 @@
 
 #pestanas a:link{
     text-decoration: none;
-    color: #C8BEBC;
+    color: white;
 }
 
 #contenidopestanas{
 		text-decoration: none;
     background: transparent;
-    border: 3.5px solid #260606;
+    border: 3px solid #460606;
 		border-left: 0px;
+		color: white;
 }
 
 #contenidopestanas div{
@@ -147,11 +145,11 @@
 }
 
 #pestanas #pestana2{
-  background: #260606;
+  background: #460606;
 }
 
 #pestanas #pestana3{
-  background: #260606;
+  background: #460606;
 }
 
 /* PESTAÑAS FIN*/
@@ -167,7 +165,7 @@
 	padding-top: 10px;
 	margin-top: 40px;
 	margin-bottom: 100px;
-
+	border: 2px solid rgba(172,32,45,0.8);
 }
 #perfilBody{
 	background: url(../../images/estudio.png);

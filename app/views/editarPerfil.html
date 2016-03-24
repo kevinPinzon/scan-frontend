@@ -1,0 +1,57 @@
+<div id="perfilBody" ng-controller="ScanController">
+				<!-- perfil -->
+					<div class="divPerfilEditar col-md-8 col-md-offset-2">
+						<div id="PerfilBasico" class="col-md-4">
+
+							<div class="row">
+								<img id="imgPerfil" src="images/pic08.jpg"alt="imagen de perfil" height="250px">
+							</div>
+							<div class="row">
+                <a href="#">
+                  <h3 id="h3Perfil" ng-click="perfil()">{{$sessionStorage.currentUser.username}}</h3>
+                </a>
+							</div>
+							<div class="row">
+								<h4 id="h4Perfil">Correo electronico</h4>
+							</div>
+							<div class="row">
+									<button type="button" id="buttonBiblioteca" class="btn btn-default">
+										<span class="glyphicon glyphicon-music" </span>
+									</button>
+									<label class="labelBasico">0 Canciones creadas</label>
+							</div>
+
+							<div class="row">
+								<button type="button" id="buttonAmigos" class="btn btn-default">
+									<span class="glyphicon glyphicon-user" </span>
+								</button>
+								<label class="labelBasico">0 Amigos</label>
+							</div>
+						</div>
+						<!-- Pestañas COMIENZO-->
+
+              <div id="editarPerfil" class="col-md-7 col-md-offset-1">
+                <div id="divImagEditar">
+                  <img id="imgEditar" src="images/pic08.jpg"alt="imagen de perfil" height="100px">
+                  <a href="#"><h4 id="H4editar" >Camibar Imagen de perfil</h4></a>
+                </div>
+                <div class="informacionEditar">
+                  <form class="form-inline">
+                    <label class="col-lg-6 editarLabel">Primer nombre  </label>
+                    <input type="text" class=" form-control inputEditar"  ng-model="user.name.first">
+                  </form>
+                  <form class="form-inline">
+                    <label class="col-lg-6 editarLabel">Apellido  </label>
+                    <input type="text" class=" form-control inputEditar" ng-model="user.name.last">
+                  </form>
+                  <form class="form-inline">
+                    <label class="col-lg-6 editarLabel">Email  </label>
+                    <input type="text" class=" form-control inputEditar"  ng-model="user.mail">
+                  </form>
+                </div>
+		            <a href="#" class="buttonEditar buttonSpecial col-md-4 col-md-offset-1" ng-click="GuardarPerfil()">Guardar</a>
+        				<a href="#" class=" buttonEditar buttonSpecial col-md-4 col-md-offset-1" ng-click="perfil()">Cancelar</a>
+              </div>
+						<!-- pestañas FIN -->
+					</div>
+	</div>

@@ -31,4 +31,10 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
 					templateUrl: '/views/perfil.html',
 					controller: 'ScanController'
 			});
+			$stateProvider
+				.state('editarPerfil', {
+					url: '/editarPerfil',
+					templateUrl: '/views/editarPerfil.html',
+					controller: 'ScanController'
+			});
 }])

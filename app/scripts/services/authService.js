@@ -15,6 +15,11 @@ angular.module('AngularScaffold.Services').factory('AuthService', ['$http',
 				Perfil: function(payload){
 					return $http.post(baseUrl + "v1/perfil", payload);
 				},
-
+				EditarPerfil: function(payload){
+					return $http.post(baseUrl + "v1/EditarPerfil", payload);
+				},
+				GuardarPerfil: function(payload){
+					return $http.post(baseUrl + "v1/perfil", payload);
+				}
 	    };
 }]);
