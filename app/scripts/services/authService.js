@@ -20,6 +20,9 @@ angular.module('AngularScaffold.Services').factory('AuthService', ['$http',
 				},
 				GuardarPerfil: function(payload){
 					return $http.post(baseUrl + "v1/perfil", payload);
+				},
+				BuscarAmigos: function(payload){
+					return $http.post(baseUrl + "v1/BuscarAmigos", payload);
 				}
 	    };
 }]);

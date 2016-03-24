@@ -112,14 +112,14 @@
     float: top;
     font-size: 1.2em;
     font-weight: bold;
-		margin-left: 6px;
-		padding-left: 4px;
+		margin-left: 12px;
+		padding-left: 13px;
 }
 
 #pestanas li{
     float: left;
     text-align: center;
-    margin: 0px 2px 0px -0px;
+    margin: 0px 2px 0px 0px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     padding: 0px 20px 0px 20px;
@@ -673,7 +673,7 @@ input{
 		.button:hover {
 			text-decoration: none !important;
 			box-shadow: inset 0 0 0 1px #E41818;
-			color: #FC1A00 !important;
+			color: #FC1A00 ;
 			background: #260606;
 		}
 		#grabar:active{
