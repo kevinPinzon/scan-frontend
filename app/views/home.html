@@ -6,8 +6,11 @@
     <img id="imgPerfilHome" src="images/pic08.jpg"alt="logo" height="200px">
   </div>
   <div ng-show="$sessionStorage.currentUser">
-    <h3 id="h3PerfilHome">{{$sessionStorage.currentUser.username}}</h3>
+    <a href="#">
+      <h3 id="h3PerfilHome" ng-click="perfil()">{{$sessionStorage.currentUser.username}}</h3>
+    </a>
   </div>
+
   <div >
     <button type="button" id="buttonBiblioteca" class="btn btn-default">
       <span class="glyphicon glyphicon-music"> </span>

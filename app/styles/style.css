@@ -1,9 +1,86 @@
+#buscarAmigos{
+	padding-top: 10px;
+	margin-top: 40px;
+	background: url(../../images/background2.png);
+	opacity: 0.8;
+	height: 550px;
+	margin-bottom: 100px;
+	border: 2px solid rgba(172,32,45,0.8);
+}
+
+#buttonBuscarAmigos:hover{
+	background: transparent;
+	border: 1.2px solid white !important;
+}
+
+#buttonBuscarAmigos{
+	background: transparent;
+	color: white !important;
+	border: 2.2px solid white !important;
+}
+
+.divPerfilEditar{
+	background: url(../../images/background2.png);
+	background-size: 100% auto;
+	opacity: 0.9;
+	height: 550px;
+	padding-top: 10px;
+	margin-top: 40px;
+	margin-bottom: 100px;
+	border: 2px solid rgba(172,32,45,0.8);
+}
+#editarPerfil{
+	margin-top: 20px;
+	background:transparent;
+}
+
+#divImagEditar{
+	margin-bottom: 40px;
+	margin-left: 15px;
+}
+.buttonEditar{
+	font-size: 1.2em !important;
+	font-weight: 600 !important;
+	color: white !important;
+	padding-top: 12px !important;
+}
+
+.informacionEditar{
+	margin-bottom: 50px;
+}
+#imgEditar{
+ padding: 0px;
+ margin: 0px;
+}
+#H4editar{
+	color: white;
+	font-size: 0.6em;
+}
+.editarLabel{
+	font-size: 1.1em;
+	color: white;
+}
+
+.inputEditar{
+	height: 25px !important;
+	width: 190px !important;
+}
+
+#nickNameMenu{
+	font-size: 1.4em !important;
+}
+
+#imagMenu{
+	margin-top: 10px;
+	margin-right: 40px;
+}
+
 #Navbar{
 	margin-top: -50px;
 	background-color: rgba(172,32,45,.6);
 	height: 60px;
 	border-top: 0px solid #000;
-	border-bottom: 0px solid #000;
+	border-bottom: 2px solid rgba(172,32,45,0.8);
 }
 
 #fondo_principal{

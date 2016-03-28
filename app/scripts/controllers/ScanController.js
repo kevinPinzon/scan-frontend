@@ -22,4 +22,28 @@ angular.module('AngularScaffold.Controllers')
       alert(err.data.error + " " + err.data.message);
     });
   }
+
+  $scope.perfil = function(){
+    $location.path('/perfil');
+  }
+
+  $scope.editarPerfil = function(){
+    $location.path('/editarPerfil');
+  }
+
+  $scope.buscarAmigos = function(){
+    $location.path('/buscarAmigos');
+  }
+
+  $scope.GuardarPerfil = function(){
+    alert($scope.user.name.first);
+    alert($scope.user.name.last);
+    alert($scope.user.mail);
+    $scope.user.scope="regular";
+    ScanService.GuardarPerfil($scope.user).then(function(response){
+    $location.path('/perfil');
+    }).catch(function(err){
+      alert(err.data.error + " " + err.data.message);
+    });
+  }
 }]);

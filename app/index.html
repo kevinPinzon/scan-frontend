@@ -11,7 +11,7 @@
   <div  ng-controller="NavbarController">
     <nav id="Navbar" class="main">
       <div class="container-fluid" >
-        <img src="images/scan-blanco.png" alt="logo" height="50px">
+        <img src="images/scan-blanco.png" alt="logo" height="60px">
         <div class="navbar-header pull-right">
           <form class="navbar-form navbar-right" role="search">
             <div class="form-group" ng-show="!$sessionStorage.currentUser">
@@ -22,7 +22,7 @@
             </div>
             <div class="row">
               <a class="fa-bars" href="#menu" ng-show="$sessionStorage.currentUser">
-                  <span class="glyphicon glyphicon-menu-hamburger" </span>
+              <img id="imagMenu" src="images/list_bullets.ico" alt="menu" height="30px">
               </a>
             </div>
           </form>
@@ -37,7 +37,7 @@
     <!-- Search -->
     <section>
       <form class="search" method="get" action="#">
-        <input type="text" name="query" placeholder="Buscar Amigos" />
+        <input type="text" name="query" ng-click="" placeholder="Buscar Amigos" />
       </form>
     </section>
 
@@ -45,7 +45,9 @@
     <section>
       <ul class="links">
         <li>
-            <h3 class="Hmenu">{{$sessionStorage.currentUser.username}}</h3>
+          <a href="#">
+            <h3 id="nickNameMenu" ng-click="perfil()">{{$sessionStorage.currentUser.username}}</h3>
+          </a>
         </li>
         <li>
           <a href="#">
@@ -66,7 +68,7 @@
       <!-- Actions -->
       <section ng-controller="NavbarController">
         <ul class="actions vertical">
-          <li><a id="salir" class="button special" ng-click="logout()">Salir</a></li>
+          <li><a id="salir" class="buttonSpecial col-md-8 " ng-click="logout()">Cerrar sesion</a></li>
         </ul>
       </section>
     </section>
