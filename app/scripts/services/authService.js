@@ -1,7 +1,7 @@
 angular.module('AngularScaffold.Services').factory('AuthService', ['$http',
 	function($http){
 		$http.defaults.withCredentials = true;
-		var baseUrl = 'http://localhost:8000/';
+		var baseUrl = 'mongodb://admin:admin@ds015899.mlab.com:15899/';
 		return {
 				Logout: function(){
 					return $http.get(baseUrl + "v1/logout");
