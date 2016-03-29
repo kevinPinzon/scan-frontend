@@ -26,7 +26,7 @@ angular.module('AngularScaffold.Controllers')
   $scope.changeview= function(view){
     $location.path(view);
   }
-  
+
   $scope.GuardarPerfil = function(){
     alert($scope.user.name.first);
     alert($scope.user.name.last);
