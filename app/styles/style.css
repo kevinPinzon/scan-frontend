@@ -77,10 +77,10 @@
 
 #Navbar{
 	margin-top: -50px;
-	background-color: rgba(172,32,45,.6);
+	background-color: rgba(172,32,45,.0);
 	height: 60px;
 	border-top: 0px solid #000;
-	border-bottom: 2px solid rgba(172,32,45,0.8);
+	border-bottom: 0px solid #000;
 }
 
 #fondo_principal{

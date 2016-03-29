@@ -11,7 +11,7 @@
   <div  ng-controller="NavbarController">
     <nav id="Navbar" class="main">
       <div class="container-fluid" >
-        <img src="images/scan-blanco.png" alt="logo" height="60px">
+        <img src="images/scan-blanco.png" alt="logo" height="150px">
         <div class="navbar-header pull-right">
           <form class="navbar-form navbar-right" role="search">
             <div class="form-group" ng-show="!$sessionStorage.currentUser">
@@ -46,7 +46,7 @@
       <ul class="links">
         <li>
           <a href="#">
-            <h3 id="nickNameMenu" ng-click="perfil()">{{$sessionStorage.currentUser.username}}</h3>
+            <h3 id="nickNameMenu" ng-click="changeview('/perfil')">{{$sessionStorage.currentUser.username}}</h3>
           </a>
         </li>
         <li>
