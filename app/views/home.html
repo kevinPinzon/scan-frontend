@@ -6,21 +6,21 @@
     <img id="imgPerfilHome" src="images/user2.png"alt="logo" height="200px">
   </div>
   <div ng-show="$sessionStorage.currentUser">
-    <a href="#">
+    <a href='javascript:cambiarPestanna(pestanas,pestana2);'>
       <h3 id="h3PerfilHome" ng-click="changeview('/perfil')">{{$sessionStorage.currentUser.username}}</h3>
     </a>
   </div>
 
   <div >
     <button type="button" id="buttonBiblioteca" class="btn btn-default">
-      <span class="glyphicon glyphicon-music"> </span>
+        <span class="glyphicon glyphicon-music" ng-click="changeview('/perfil')" > </span>
     </button>
     <label class="labelBasico">0 Canciones creadas</label>
   </div>
 
   <div >
     <button type="button" id="buttonAmigos" class="btn btn-default">
-      <span class="glyphicon glyphicon-user"></span>
+      <span class="glyphicon glyphicon-user" ng-click="changeview('/perfil')"></span>
     </button>
     <label class="labelBasico">0 Amigos</label>
   </div>
