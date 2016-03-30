@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Scan</title>
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="assets/css/main.css" />
@@ -11,7 +11,7 @@
   <div  ng-controller="NavbarController">
     <nav id="Navbar" class="main">
       <div class="container-fluid" >
-        <img src="images/scan-blanco.png" alt="logo" height="60px">
+        <img src="images/scan-blanco.png" alt="logo" height="100px">
         <div class="navbar-header pull-right">
           <form class="navbar-form navbar-right" role="search">
             <div class="form-group" ng-show="!$sessionStorage.currentUser">
@@ -45,8 +45,8 @@
     <section>
       <ul class="links">
         <li>
-          <a href="#">
-            <h3 id="nickNameMenu" ng-click="perfil()">{{$sessionStorage.currentUser.username}}</h3>
+          <a href='javascript:cambiarPestanna(pestanas,pestana2);'>
+            <h3 id="nickNameMenu" ng-click="changeview('/perfil')">{{$sessionStorage.currentUser.username}}</h3>
           </a>
         </li>
         <li>
@@ -60,7 +60,7 @@
           </a>
         </li>
         <li>
-          <a href="#">
+          <a ng-click="changeview('/audio')">
             <h3 class="Hmenu">Crear partitura</h3>
           </a>
         </li>
@@ -74,6 +74,7 @@
     </section>
   </body>
   <script src="/jquery/dist/jquery.js"></script>
+  <script src="scripts/audio.js"></script>
   <script src="/angular/angular.js"></script>
   <script src="/angular-ui-router/release/angular-ui-router.js"></script>
   <script src="/bootstrap-css/js/bootstrap.min.js"></script>

@@ -23,16 +23,8 @@ angular.module('AngularScaffold.Controllers')
     });
   }
 
-  $scope.perfil = function(){
-    $location.path('/perfil');
-  }
-
-  $scope.editarPerfil = function(){
-    $location.path('/editarPerfil');
-  }
-
-  $scope.buscarAmigos = function(){
-    $location.path('/buscarAmigos');
+  $scope.changeview= function(view){
+    $location.path(view);
   }
 
   $scope.GuardarPerfil = function(){

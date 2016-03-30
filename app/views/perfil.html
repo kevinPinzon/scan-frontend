@@ -7,8 +7,8 @@
 								<img id="imgPerfil" src="images/pic08.jpg"alt="logo" height="250px">
 							</div>
 							<div class="row">
-								<a href="#">
-									<h3 id="h3Perfil" ng-click="perfil()">{{$sessionStorage.currentUser.username}}</h3>
+								<a href='javascript:cambiarPestanna(pestanas,pestana2);'>
+									<h3 id="h3Perfil" ng-click="changeview('/perfil')">{{$sessionStorage.currentUser.username}}</h3>
 								</a>
 							</div>
 							<div class="row">
@@ -30,7 +30,7 @@
 
 							<div class="row">
 									<button type="button" id="buttonEditar" class="btn btn-default">
-										<span class="glyphicon glyphicon-pencil" ng-click="editarPerfil()"</span>
+										<span class="glyphicon glyphicon-pencil" ng-click="changeview('/editarPerfil')"</span>
 									</button>
 									<label class="labelBasico" >Editar perfil</label>
 							</div>

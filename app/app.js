@@ -43,4 +43,10 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
 					templateUrl: '/views/buscarAmigos.html',
 					controller: 'ScanController'
 			});
+			$stateProvider
+				.state('audio', {
+					url: '/audio',
+					templateUrl: '/views/Audio.html',
+					controller: 'ScanController'
+			});
 }])
