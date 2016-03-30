@@ -1,6 +1,9 @@
 <div ng-controller="ScanController" >
 
 <!-- perfil COMIENZO-->
+<div class="row">
+
+
 <div id="dviPerfilHome" class="col-md-2 col-md-offset-0">
   <div >
     <img id="imgPerfilHome" src="images/user2.png"alt="logo" height="200px">
@@ -15,7 +18,7 @@
     <button type="button" id="buttonBiblioteca" class="btn btn-default">
         <span class="glyphicon glyphicon-music" ng-click="changeview('/perfil')" > </span>
     </button>
-    <label class="labelBasico">0 Canciones creadas</label>
+    <label class="labelBasico">0 Canciones</label>
   </div>
 
   <div >
@@ -36,7 +39,7 @@
 <!-- perfil FINAL-->
 
 <!-- noticias COMIENZO -->
-<div id="divNoticiasHome" class="col-md-5 col-md-offset-4">
+<div id="divNoticiasHome" class="col-md-6 col-md-offset-0">
 <!-- Post -->
   <article class="noticia post">
     <header  id="postHeader">
@@ -57,10 +60,11 @@
       </a>
     <p id="descripcionCansion">breve desicripcion de la cancion</p>
     <footer>
-      <ul class="actions">
-        <li><a href="#" class="col-md-12 vernoticia buttonSpecial ">Ver noticia completa</a></li>
-      </ul>
-
+      <div class="divvernoticia">
+        <ul class="actions">
+          <li><a href="#" class="col-md-12 vernoticia buttonSpecial ">Ver noticia completa</a></li>
+        </ul>
+      </div>
     </footer>
   </article>
 
@@ -84,15 +88,19 @@
       </a>
     <p id="descripcionCansion">breve desicripcion de la cancion</p>
     <footer>
-      <ul class="actions">
-        <li><a href="#" class="col-md-12 vernoticia buttonSpecial ">Ver noticia completa</a></li>
-      </ul>
-
+      <div class="divvernoticia">
+        <ul class="actions">
+          <li><a href="#" class="col-md-12 vernoticia buttonSpecial ">Ver noticia completa</a></li>
+        </ul>
+      </div>
     </footer>
 
   </article>
+  <div id="divVerMas">
   <ul class="actions">
     <li><a href="#" id="verMas" class="col-md-12 buttonSpecial ">Ver mas noticias</a></li>
   </ul>
+  </div>
+</div>
 </div>
 </div>
