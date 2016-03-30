@@ -25,6 +25,8 @@ angular.module('AngularScaffold.Controllers')
 
   $scope.changeview= function(view){
     $location.path(view);
+    if(view=='/audio')
+      window.location.reload();
   }
 
   $scope.GuardarPerfil = function(){
