@@ -10,9 +10,9 @@ angular.module('AngularScaffold.Services').factory('AuthService', ['$http',
 				Login: function(payload){
 					return $http.post(baseUrl + "v1/login", payload);
 				},
-        Register: function(payload){
-          return $http.post(baseUrl + "v1/register", payload);
-      	},
+				PostUser: function(payload){
+					return $http.post(baseUrl + "v1/register", payload);
+				},
 				Perfil: function(payload){
 					return $http.post(baseUrl + "v1/perfil", payload);
 				},

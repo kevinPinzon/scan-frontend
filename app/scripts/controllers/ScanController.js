@@ -24,16 +24,7 @@ angular.module('AngularScaffold.Controllers')
     return $sessionStorage.currentUser && $sessionStorage.currentUser.scope.indexOf('regular') > -1;
   }
 
-  $scope.postUser = function(){
-    alert($scope.user.name.first);
-    $scope.user.scope="regular";
-    ScanService.PostUser($scope.user).then(function(response){
-    alert("usuario creado");
-    $location.path('/welcome');
-    }).catch(function(err){
-      alert(err.data.error + " " + err.data.message);
-    });
-  }
+
   $scope.getUser = function(ObjectId){
     ScanService.PostUser(ObjectId).then(function(response){
       $scope.friends.push(response.data);

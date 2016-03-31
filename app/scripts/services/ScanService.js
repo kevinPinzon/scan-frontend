@@ -4,9 +4,6 @@ angular.module('AngularScaffold.Services').factory('ScanService', ['$http',
 		//var baseUrl = 'http://localhost:8000/';
 		var baseUrl = 'https://scan-backend.herokuapp.com/';
 		return {
-				PostUser: function(payload){
-					return $http.post(baseUrl + "v1/register", payload);
-				},
 				GetUser: function(payload){
 					return $http.post(baseUrl + "v1/userId", payload);
 				},

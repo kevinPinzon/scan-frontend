@@ -9,7 +9,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
     	.state('bienvenida', {
     		url: '/welcome',
     		templateUrl: '/views/bienvenida.html',
-    		controller: 'ScanController'
+    		controller: 'NavbarController'
     	});
 
 			$stateProvider
@@ -23,7 +23,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
 	    	.state('registro', {
 	    		url: '/registro',
 	    		templateUrl: '/views/registro.html',
-	    		controller: 'ScanController'
+	    		controller: 'NavbarController'
 	    });
 			$stateProvider
 				.state('perfil', {

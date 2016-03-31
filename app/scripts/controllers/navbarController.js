@@ -32,4 +32,14 @@ angular.module('AngularScaffold.Controllers')
         if(view=='/audio')
           window.location.reload();
       }
+      $scope.postUser = function(){
+        alert($scope.user.name.first);
+        $scope.user.scope="regular";
+        authService.PostUser($scope.user).then(function(response){
+        alert("usuario creado");
+        $location.path('/welcome');
+        }).catch(function(err){
+          alert(err.data.error + " " + err.data.message);
+        });
+      }
   }]);
