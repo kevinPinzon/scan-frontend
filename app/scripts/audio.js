@@ -62,7 +62,7 @@ function initAudio(){
   		this.classList.remove("droptarget");
   		e.preventDefault();
 		theBuffer = null;
-*/
+
 	  	var reader = new FileReader();
 	  	reader.onload = function (event) {
 	  		audioContext.decodeAudioData( event.target.result, function(buffer) {
@@ -76,6 +76,7 @@ function initAudio(){
 	  	reader.readAsArrayBuffer(e.dataTransfer.files[0]);
 	  	return false;
 	};
+  */
 }
 
 function error() {
