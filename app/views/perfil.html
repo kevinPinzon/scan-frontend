@@ -12,43 +12,70 @@
 								</a>
 							</div>
 							<div class="row">
-								<h4 id="h4Perfil">Correo electronico</h4>
+									<h4 id="h4Perfil">{{$sessionStorage.currentUser.mail}}</h4>
 							</div>
 							<div class="row">
 									<button type="button" id="buttonBiblioteca" class="btn btn-default">
 										<span class="glyphicon glyphicon-music" </span>
 									</button>
-									<label class="labelBasico">0 Canciones</label>
+									<a class = "labelPerfil" href='javascript:cambiarPestanna(pestanas,pestana2);'>Canciones</a>
 							</div>
 
 							<div class="row">
 								<button type="button" id="buttonAmigos" class="btn btn-default">
 									<span class="glyphicon glyphicon-user" </span>
 								</button>
-								<label class="labelBasico">0 Amigos</label>
+								<a class = "labelPerfil" href='javascript:cambiarPestanna(pestanas,pestana3);'>{{friends.length}} Amigos</a>
 							</div>
 
 							<div class="row">
 									<button type="button" id="buttonEditar" class="btn btn-default">
-										<span class="glyphicon glyphicon-pencil" ng-click="changeview('/editarPerfil')"</span>
+										<span class="glyphicon glyphicon-pencil" </span>
 									</button>
-									<label class="labelBasico" >Editar perfil</label>
+									<a class = "labelPerfil" href="#" ng-click="changeview('/editarPerfil')">Editar Perfil</a>
 							</div>
 						</div>
 								<!-- Pestañas COMIENZO-->
 						<div id="pestanasC">
 							<div id="pestanas" class="col-md-6" >
 		             <ul class="list-group" >
-	                     <li id="pestana2" class="list-group-item"><a href='javascript:cambiarPestanna(pestanas,pestana2);'>Biblioteca</a></li>
+	                     <li id="pestana2" class="list-group-item"><a href='javascript:cambiarPestanna(pestanas,pestana2);'>Canciones</a></li>
 	                     <li id="pestana3" class="list-group-item"><a href='javascript:cambiarPestanna(pestanas,pestana3);'>Amigos</a></li>
 	                 </ul>
 	          	</div>
 	           <div id="contenidopestanas" class="col-md-8">
 		           <div id="cpestana2">
-		               El nombre hojas de estilo en cascada viene del inglés Cascading Style Sheets, del que toma sus siglas. CSS es un lenguaje usado para definir la presentación de un documento estructurado escrito en HTML o XML2 (y por extensión en XHTML). El W3C (World Wide Web Consortium) es el encargado de formular la especificación de las hojas de estilo que servirán de estándar para los agentes de usuario o navegadores.
-		           </div>
+		               LISTAR CANCIONES CON ANGULARJS
+								</div>
 		           <div id="cpestana3">
-		               JavaScript es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se define como orientado a objetos,3 basado en prototipos, imperativo, débilmente tipado y dinámico.
+								 <table class="table table-striped">
+									 <tr>
+										 <th>
+											 Nombre
+										 </th>
+										 <th>
+											 Nombre de Usuario
+										 </th>
+										 <th>
+										 		Correo
+										 </th>
+									 </tr>
+									 <tr ng-repeat="friend in friends">
+										 <td>
+											 {{friend.name.first}} {{friend.name.last}}
+										 </td>
+										 <td>
+											 {{friend.username}}
+										 </td>
+										 <td>
+											 {{friend.mail}}
+										 </td>
+									 </tr>
+								 </table>
+								 <input class="form-control inputRegistro" type="text" name="name" ng-model="friendUsername" placeholder="Nombre de usuario">
+								 <button type="button" id="buttonAgregar" class="btn btn-default" ng-click="addFriend()">
+									 <span class="glyphicon glyphicon-plus"></span>
+								 </button>
 		           </div>
 	           </div>
 							<!-- pestañas FIN -->
