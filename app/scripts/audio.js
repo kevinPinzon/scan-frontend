@@ -360,8 +360,8 @@ function updatePitch( time ) {
     }else{
       noteFrequency = 7
     }
-    noteElem.innerHTML = noteStrings[note%12] + noteFrequency;
-    pitchElem.innerText = Math.round( pitch ) ;
+    //noteElem.innerHTML = noteStrings[note%12] + noteFrequency;
+    //pitchElem.innerText = Math.round( pitch ) ;
     var noteName = noteStrings[note%12] + noteFrequency;
 
     if(currentNote == noteName){
