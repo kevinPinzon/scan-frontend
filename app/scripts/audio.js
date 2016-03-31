@@ -157,10 +157,12 @@ function toggleLiveInput() {
         }, gotStream);
 
   if(!click){
+      initAudio();
       restart();
       setTimeout(getNotePlayed(),drawNoteTime);
       click = true;
   }else{
+    initAudio();
     restart();
   }
 
@@ -360,8 +362,10 @@ function updatePitch( time ) {
     }else{
       noteFrequency = 7
     }
-    //noteElem.innerHTML = noteStrings[note%12] + noteFrequency;
-    //pitchElem.innerText = Math.round( pitch ) ;
+    if(noteElem)
+      noteElem.innerHTML = noteStrings[note%12] + noteFrequency;
+    if(pitchElem)
+      pitchElem.innerText = Math.round( pitch ) ;
     var noteName = noteStrings[note%12] + noteFrequency;
 
     if(currentNote == noteName){
