@@ -1,3 +1,131 @@
+#logoPrincipal{
+	max-width: 30%;
+	min-width: 13%;
+	width: 13%;
+	margin-left: 2%;
+}
+
+
+	.divPerfil{
+	width: 70%;
+	min-width: 60%;
+	max-width: 90%;
+	box-sizing: border-box;
+	height: 100% !important;
+	padding-bottom: 5% !important;
+	margin-top: 7% !important;
+}
+@media screen and (max-width: 1000px){
+	.divPerfil{
+		margin-top: 15% !important;
+		margin-left: 10%;
+	}
+	#PerfilBasico{
+		margin-top: 5%;
+		width: 100%;
+		margin-left: 25%;
+	}
+	#imgPerfil{
+		width: 50%;
+	}
+	#pestanasC{
+		margin-left: 5%;
+		width: 95%;
+	}
+}
+
+#divregistro{
+	width: 70%;
+	margin-left: 20%;
+}
+
+@media screen and (max-width: 1600px){
+	.logoRegistro{
+		#divregistro{
+			width: 70%;
+			margin-left: 5%;
+			margin-right: 5%;
+
+		}
+	}
+	.registroLabel{
+		width: 80%;
+		margin-left: 5%;
+	}
+	.form-inline{
+		margin-left: 10%;
+		width: 70%;
+	}
+	.inputRegistro{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 1000px){
+	.form-inline{
+		padding-right: 5%;
+		width: 90%;
+	}
+	.logoRegistro{
+		margin-left: 25%;
+	}
+	#divregistro{
+		width: 80%;
+		margin-left: %;
+		margin-right: %;
+	}
+	.buttonSpecial{
+		margin-left: 40%;
+		margin-top: 10%;
+	}
+	.registroLabel{
+		width: 100%;
+		margin-left: %;
+	}
+	.inputRegistro{
+		width: 100%;
+	}
+}
+
+
+@media screen and (max-width: 1000px){
+	#Navbar{
+		width: 100%;
+
+	}
+	#logoPrincipal{
+		width: 18%;
+	}
+	#opcionesNav{
+		width: 50%;
+	}
+	#divregistro{
+		margin-left: 5%;
+		padding-left: 10%;
+		margin-right: 5%;
+		width: 70%;
+	}
+
+}
+@media screen and (max-width: 800px){
+	#Navbar{
+		width: 100%;
+	}
+	#logoPrincipal{
+		width: 100%;
+	}
+	#opcionesNav{
+		width: 100%;
+	}
+}
+
+#opcionesNav{
+	margin-left: 0px;
+	width: 100%;
+	max-width: 100%;
+	min-width: 50%;
+}
+
 @media screen and (max-width: 1000px){
 	#divNoticiasHome{
 		width: 30%;
@@ -83,6 +211,11 @@ div.vague {
 	margin-bottom: 100px;
 	border: 2px solid rgba(172,32,45,0.8);
 }
+
+#imgPerfil{
+	padding-right: 10px;
+}
+
 #editarPerfil{
 	margin-top: 20px;
 	background:transparent;

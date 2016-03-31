@@ -43,15 +43,15 @@
 30 verbose targetResolver reading package data from C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend\node_modules\main-bower-files\package.json
 31 verbose targetResolver reading package data from C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend\node_modules\.bin\bower\package.json
 32 verbose targetResolver reading package data from C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend\node_modules\.bin\bower.cmd\package.json
-33 verbose already installed skipping inert@^3.2.0 C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend
-34 verbose already installed skipping inject@^1.0.0-beta2 C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend
-35 verbose already installed skipping main-bower-files@^2.9.0 C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend
-36 verbose already installed skipping bower@^1.6.9 C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend
-37 verbose already installed skipping gulp@^3.9.0 C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend
-38 verbose already installed skipping gulp-debug@^2.1.2 C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend
-39 verbose already installed skipping gulp-inject@^3.0.0 C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend
-40 verbose already installed skipping gulp-load-plugins@^1.1.0 C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend
-41 verbose already installed skipping hapi@^11.1.2 C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend
+33 verbose already installed skipping bower@^1.6.9 C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend
+34 verbose already installed skipping gulp@^3.9.0 C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend
+35 verbose already installed skipping gulp-debug@^2.1.2 C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend
+36 verbose already installed skipping gulp-inject@^3.0.0 C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend
+37 verbose already installed skipping gulp-load-plugins@^1.1.0 C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend
+38 verbose already installed skipping hapi@^11.1.2 C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend
+39 verbose already installed skipping inert@^3.2.0 C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend
+40 verbose already installed skipping inject@^1.0.0-beta2 C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend
+41 verbose already installed skipping main-bower-files@^2.9.0 C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend
 42 silly install resolved []
 43 info build C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend
 44 info linkStuff client@1.0.0
