@@ -24,20 +24,20 @@
 	padding-bottom: 5% !important;
 	margin-top: 15% !important;
 }
-@media screen and (max-width: 1000px){
-	#divAudio{
-		margin-top: 5%;
-		width: 90%;
-		margin-left: 2%;
+@media screen and (max-width: 800px){
+	#partitura{
+		margin-left: 5% !important;
+		padding-left: 5% !important;
 	}
 	#detector{
 		width: 90% !important;
 		margin-left: 5%;
 	}
-	#partitura{
-		margin-left: 5% !important;
-		padding-left: 5% !important;
+	#divAudio{
+		margin-top: 5%;
+		width: 90%;
 	}
+		margin-left: 2%;
 }
 @media screen and (max-width: 1000px){
 	#divAudio{
