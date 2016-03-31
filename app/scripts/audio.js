@@ -25,8 +25,10 @@ var click = false;
 var noteFrequency;
 var drawNoteTime = 2000;
 
-window.onload = function() {
-	audioContext = new AudioContext();
+window.onload = initAudio;
+
+function initAudio(){
+  audioContext = new AudioContext();
 	MAX_SIZE = Math.max(4,Math.floor(audioContext.sampleRate/5000));	// corresponds to a 5kHz signal
 	var request = new XMLHttpRequest();
 	/*request.open("GET", "../sounds/whistling3.ogg", true);
@@ -51,6 +53,7 @@ window.onload = function() {
 	detuneElem = document.getElementById( "detune" );
 	detuneAmount = document.getElementById( "detune_amt" );
 
+/*
 	detectorElem.ondragenter = function () {
 		this.classList.add("droptarget");
 		return false; };
@@ -59,7 +62,7 @@ window.onload = function() {
   		this.classList.remove("droptarget");
   		e.preventDefault();
 		theBuffer = null;
-
+*/
 	  	var reader = new FileReader();
 	  	reader.onload = function (event) {
 	  		audioContext.decodeAudioData( event.target.result, function(buffer) {
@@ -73,9 +76,6 @@ window.onload = function() {
 	  	reader.readAsArrayBuffer(e.dataTransfer.files[0]);
 	  	return false;
 	};
-
-
-
 }
 
 function error() {
@@ -350,7 +350,7 @@ function updatePitch( time ) {
 	 	var note =  noteFromPitch( pitch );
 		var detune = centsOffFromPitch( pitch, note );
     noteArray[note%12]++;
-    if(pitch < 512){
+    if(pitch < 510){
       noteFrequency = 4;
     }else if(pitch < 1024){
       noteFrequency = 5;
