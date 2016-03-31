@@ -12,7 +12,9 @@
   <div  ng-controller="NavbarController">
     <nav id="Navbar" class="main">
       <div class=" row container-fluid" >
-        <img id="logoPrincipal" src="images/scan-blanco.png" alt="logo" height="150px">
+          <a ng-controller="ScanController" ng-click="changeview('/home')">
+            <img id="logoPrincipal" src="images/scan-blanco.png" alt="logo" height="150px">
+          </a>
         <div class="navbar-header pull-right">
           <form class="navbar-form navbar-right" role="search">
             <div id="opcionesNav" class="form-group" ng-show="!$sessionStorage.currentUser">
