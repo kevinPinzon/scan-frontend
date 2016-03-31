@@ -14,6 +14,16 @@ var detectorElem,
 	noteElem,
 	detuneElem,
 	detuneAmount;
+var noteArray = [
+    0,0,0,0,0,0,
+    0,0,0,0,0,0
+  ];
+var noteCount = 0;
+var currentNote;
+
+var click = false;
+var noteFrequency;
+var drawNoteTime = 2000;
 
 window.onload = function() {
 	audioContext = new AudioContext();
@@ -144,6 +154,15 @@ function toggleLiveInput() {
                 "optional": []
             },
         }, gotStream);
+
+  if(!click){
+      restart();
+      setTimeout(getNotePlayed(),drawNoteTime);
+      click = true;
+  }else{
+    restart();
+  }
+
 }
 
 function togglePlayback() {
@@ -293,7 +312,7 @@ function updatePitch( time ) {
 	analyser.getFloatTimeDomainData( buf );
 	var ac = autoCorrelate( buf, audioContext.sampleRate );
 	// TODO: Paint confidence meter on canvasElem here.
-
+  /*
 	if (DEBUGCANVAS) {  // This draws the current waveform, useful for debugging
 		waveCanvas.clearRect(0,0,512,256);
 		waveCanvas.strokeStyle = "red";
@@ -317,20 +336,45 @@ function updatePitch( time ) {
 		}
 		waveCanvas.stroke();
 	}
-
+  */
  	if (ac == -1) {
- 		detectorElem.className = "vague";
-	 	pitchElem.innerText = "--";
-		noteElem.innerText = "-";
-		detuneElem.className = "";
-		detuneAmount.innerText = "--";
+ 		//detectorElem.className = "vague";
+	 	//pitchElem.innerText = "--";
+		//noteElem.innerText = "-";
+		//detuneElem.className = "";
+		//detuneAmount.innerText = "--";
  	} else {
-	 	detectorElem.className = "confident";
+
+	 	//detectorElem.className = "confident";
 	 	pitch = ac;
-	 	pitchElem.innerText = Math.round( pitch ) ;
 	 	var note =  noteFromPitch( pitch );
-		noteElem.innerHTML = noteStrings[note%12];
 		var detune = centsOffFromPitch( pitch, note );
+    noteArray[note%12]++;
+    if(pitch < 512){
+      noteFrequency = 4;
+    }else if(pitch < 1024){
+      noteFrequency = 5;
+    }else if(pitch < 2048){
+      noteFrequency = 6
+    }else{
+      noteFrequency = 7
+    }
+    noteElem.innerHTML = noteStrings[note%12] + noteFrequency;
+    pitchElem.innerText = Math.round( pitch ) ;
+    var noteName = noteStrings[note%12] + noteFrequency;
+
+    if(currentNote == noteName){
+      noteCount++;
+    }else{
+      currentNote = noteName;
+      noteCount=0;
+    }
+    console.log(noteName + "  Count: " + noteCount);
+    if(noteCount>25){
+      noteCount = 0;
+      drawNote("whole",noteName);
+    }
+    /*
 		if (detune == 0 ) {
 			detuneElem.className = "";
 			detuneAmount.innerHTML = "--";
@@ -340,10 +384,26 @@ function updatePitch( time ) {
 			else
 				detuneElem.className = "sharp";
 			detuneAmount.innerHTML = Math.abs( detune );
-		}
+		}*/
 	}
 
 	if (!window.requestAnimationFrame)
 		window.requestAnimationFrame = window.webkitRequestAnimationFrame;
 	rafID = window.requestAnimationFrame( updatePitch );
+}
+function getNotePlayed(){
+  var greater = noteArray[0];
+  var index = 0;
+  noteArray.forEach(function(elem, pos){
+    if(elem > greater){
+      greater = elem;
+      index = pos;
+    }
+  });
+
+
+  /*noteArray = [
+    0,0,0,0,0,0,
+    0,0,0,0,0,0
+  ];*/
 }

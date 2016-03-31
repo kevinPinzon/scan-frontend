@@ -30,8 +30,9 @@
       </div>
     </nav>
   </div>
-  <div class="container">
+  <div class="views">
     <div ui-view></div>
+    <!--<canvas id="score" width="700" height="200" style="border:1px solid #000000;"></canvas>-->
   </div>
   <section id="menu" ng-controller="ScanController" ng-show="$sessionStorage.currentUser">
     <!-- Search -->
@@ -84,7 +85,10 @@
   <script src="scripts/controllers/navbarController.js"></script>
   <script src="scripts/services/authService.js"></script>
   <script src="scripts/services/authService.js"></script>
+  <!-- Para dibujar la paritura -->
   <script src="scripts/audio.js"></script>
+  <script src="scripts/drawScore.js"></script>
+
   <script src="scripts/services/ScanService.js"></script>
   <script src="assets/js/jquery-1.10.2.min.js"></script>
   <script src="assets/js/jquery.min.js"></script>
