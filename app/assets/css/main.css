@@ -352,8 +352,8 @@ input{
 	}
 
 	body {
-		background: url(../../images/imag4.png);
-		background-repeat:no-repeat;
+		background: url(../../images/imag6.png);
+		background-repeat:repeat;
 		background-size: 100% auto;
 		height: 100%;
 		background-attachment: fixed;
