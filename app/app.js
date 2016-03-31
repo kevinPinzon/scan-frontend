@@ -49,4 +49,4 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
 					templateUrl: '/views/Audio.html',
 					controller: 'ScanController'
 			});
-}])
+}]);
