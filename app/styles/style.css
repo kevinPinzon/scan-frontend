@@ -48,10 +48,10 @@
 		width: 75%;
 	}
 	.divvernoticia{
-		width: 120% !important;
+		width: 100% !important;
 	}
 	.vernoticia{
-		width: 10% !important;
+		width: 80% !important;
 	}
 	.buttonSpecial{
 		width: 40%;
@@ -179,8 +179,8 @@
 		box-sizing: border-box;
 	}
 	#dviPerfilHome{
-		width: 40%;
-		padding:5% 5% 5% 45%;
+		width: 90%;
+		padding:5% 0% 0% 45%;
 		margin: 2px;
 	}
 }
@@ -252,11 +252,14 @@ div.vague {
 	background: url(../../images/background2.png);
 	background-size: 100% auto;
 	opacity: 0.9;
-	height: 60% !important;
-	padding-top: 10px;
-	margin-top: 40px;
+	height: 90% !important;
+	margin-top: 10%;
+	padding-top: 10%;
 	margin-bottom: 100px;
 	border: 2px solid rgba(172,32,45,0.8);
+	padding-right: 0px;
+	margin-right: 5%;
+
 }
 
 #imgPerfil{
@@ -264,11 +267,14 @@ div.vague {
 }
 
 #editarPerfil{
-	margin-top: 20px;
 	background:transparent;
+	height: 190%;
+	margin-bottom: 20%;
 }
 
 #divImagEditar{
+	padding-right: 0px;
+	margin-right: 0px;
 	margin-bottom: 40px;
 	margin-left: 15px;
 }
