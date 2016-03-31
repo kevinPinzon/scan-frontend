@@ -24,7 +24,7 @@ angular.module('AngularScaffold.Controllers')
     return $sessionStorage.currentUser && $sessionStorage.currentUser.scope.indexOf('regular') > -1;
   }
 
-  
+
   $scope.getUser = function(ObjectId){
     ScanService.PostUser(ObjectId).then(function(response){
       $scope.friends.push(response.data);
@@ -37,7 +37,7 @@ angular.module('AngularScaffold.Controllers')
   }
   $scope.addFriend = function(){
     ScanService.addFriend({username: $scope.friendUsername}).then(function(response){
-      console.log($scope.friendUsername);
+      
       alert(response.data);
     })
     $scope.getFriends();
@@ -45,7 +45,9 @@ angular.module('AngularScaffold.Controllers')
   $scope.getFriends = function(){
     ScanService.listMyFriends($sessionStorage.currentUser).then(function(response){
       $sessionStorage.currentUser.friends = response.data;
+      $scope.friends = [];
       for (var i = 0; i < response.data.length; i++) {
+        console.log(response.data[i]);
         var data = {_id: String(response.data[i])};
         ScanService.GetUser(data).then(function(response){
           $scope.friends.push(response.data);
