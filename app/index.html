@@ -12,7 +12,7 @@
   <div  ng-controller="NavbarController">
     <nav id="Navbar" class="main">
       <div class=" row container-fluid" >
-          <a ng-controller="ScanController" ng-click="changeview('/home')">
+          <a ng-controller="NavbarController" ng-click="changeview('/home')">
             <img id="logoPrincipal" src="images/scan-blanco.png" alt="logo" height="150px">
           </a>
         <div class="navbar-header pull-right">
@@ -37,7 +37,7 @@
     <div ui-view></div>
     <!--<canvas id="score" width="700" height="200" style="border:1px solid #000000;"></canvas>-->
   </div>
-  <section id="menu" ng-controller="ScanController" ng-show="$sessionStorage.currentUser">
+  <section id="menu" ng-controller="NavbarController" ng-show="$sessionStorage.currentUser">
     <!-- Search -->
     <section>
       <form class="search" method="get" action="#">

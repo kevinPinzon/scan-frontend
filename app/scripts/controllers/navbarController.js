@@ -27,4 +27,9 @@ angular.module('AngularScaffold.Controllers')
       $scope.register = function(){
         $location.path('/registro');
       }
+      $scope.changeview= function(view){
+        $location.path(view);
+        if(view=='/audio')
+          window.location.reload();
+      }
   }]);
