@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 26013 verbose afterAdd C:\Users\guitart\AppData\Roaming\npm-cache\balanced-match\0.3.0\package\package.json not in flight; writing
 26014 silly cache afterAdd concat-map@0.0.1
 26015 verbose afterAdd C:\Users\guitart\AppData\Roaming\npm-cache\concat-map\0.0.1\package\package.json not in flight; writing
@@ -19705,3 +19706,108 @@
 36780 error network If you are behind a proxy, please make sure that the
 36780 error network 'proxy' config is set properly.  See: 'npm help config'
 36781 verbose exit [ 1, true ]
+=======
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@2.14.12
+3 info using node@v4.2.6
+4 verbose readDependencies loading dependencies from C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend\package.json
+5 warn package.json client@1.0.0 No README data
+6 verbose install where, deps [ 'C:\\Users\\alexp\\OneDrive\\Documents\\Clases\\2016\\I Periodo\\Progra IV\\SCAN\\gitScan3\\scan-frontend',
+6 verbose install   [ 'bower',
+6 verbose install     'gulp',
+6 verbose install     'gulp-debug',
+6 verbose install     'gulp-inject',
+6 verbose install     'gulp-load-plugins',
+6 verbose install     'hapi',
+6 verbose install     'inert',
+6 verbose install     'inject',
+6 verbose install     'main-bower-files' ] ]
+7 verbose install where, peers [ 'C:\\Users\\alexp\\OneDrive\\Documents\\Clases\\2016\\I Periodo\\Progra IV\\SCAN\\gitScan3\\scan-frontend',
+7 verbose install   [] ]
+8 verbose installManyTop reading for lifecycle C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend\package.json
+9 info preinstall client@1.0.0
+10 verbose installManyTop reading scoped package data from C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend\node_modules\bower\package.json
+11 verbose installManyTop reading scoped package data from C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend\node_modules\gulp\package.json
+12 verbose installManyTop reading scoped package data from C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend\node_modules\gulp-debug\package.json
+13 verbose installManyTop reading scoped package data from C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend\node_modules\gulp-inject\package.json
+14 verbose installManyTop reading scoped package data from C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend\node_modules\gulp-load-plugins\package.json
+15 verbose installManyTop reading scoped package data from C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend\node_modules\hapi\package.json
+16 verbose installManyTop reading scoped package data from C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend\node_modules\inert\package.json
+17 verbose installManyTop reading scoped package data from C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend\node_modules\inject\package.json
+18 verbose installManyTop reading scoped package data from C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend\node_modules\main-bower-files\package.json
+19 info package.json gulp-inject@3.0.0 No license field.
+20 info package.json inject@1.0.0-beta2 No license field.
+21 verbose readDependencies loading dependencies from C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend\package.json
+22 verbose targetResolver reading package data from C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend\node_modules\bower\package.json
+23 verbose targetResolver reading package data from C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend\node_modules\gulp\package.json
+24 verbose targetResolver reading package data from C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend\node_modules\gulp-debug\package.json
+25 verbose targetResolver reading package data from C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend\node_modules\gulp-inject\package.json
+26 verbose targetResolver reading package data from C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend\node_modules\gulp-load-plugins\package.json
+27 verbose targetResolver reading package data from C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend\node_modules\hapi\package.json
+28 verbose targetResolver reading package data from C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend\node_modules\inert\package.json
+29 verbose targetResolver reading package data from C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend\node_modules\inject\package.json
+30 verbose targetResolver reading package data from C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend\node_modules\main-bower-files\package.json
+31 verbose targetResolver reading package data from C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend\node_modules\.bin\bower\package.json
+32 verbose targetResolver reading package data from C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend\node_modules\.bin\bower.cmd\package.json
+33 verbose already installed skipping bower@^1.6.9 C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend
+34 verbose already installed skipping gulp@^3.9.0 C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend
+35 verbose already installed skipping gulp-debug@^2.1.2 C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend
+36 verbose already installed skipping gulp-inject@^3.0.0 C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend
+37 verbose already installed skipping gulp-load-plugins@^1.1.0 C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend
+38 verbose already installed skipping hapi@^11.1.2 C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend
+39 verbose already installed skipping inert@^3.2.0 C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend
+40 verbose already installed skipping inject@^1.0.0-beta2 C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend
+41 verbose already installed skipping main-bower-files@^2.9.0 C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend
+42 silly install resolved []
+43 info build C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend
+44 info linkStuff client@1.0.0
+45 silly linkStuff client@1.0.0 has C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3 as its parent node_modules
+46 verbose linkBins client@1.0.0
+47 verbose linkMans client@1.0.0
+48 verbose rebuildBundles client@1.0.0
+49 verbose rebuildBundles [ '.bin',
+49 verbose rebuildBundles   'bower',
+49 verbose rebuildBundles   'gulp',
+49 verbose rebuildBundles   'gulp-debug',
+49 verbose rebuildBundles   'gulp-inject',
+49 verbose rebuildBundles   'gulp-load-plugins',
+49 verbose rebuildBundles   'hapi',
+49 verbose rebuildBundles   'inert',
+49 verbose rebuildBundles   'inject',
+49 verbose rebuildBundles   'main-bower-files' ]
+50 info install client@1.0.0
+51 info postinstall client@1.0.0
+52 verbose unsafe-perm in lifecycle true
+53 info client@1.0.0 Failed to exec postinstall script
+54 verbose stack Error: client@1.0.0 postinstall: `bower install && gulp index`
+54 verbose stack Exit status 1
+54 verbose stack     at EventEmitter.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\lifecycle.js:214:16)
+54 verbose stack     at emitTwo (events.js:87:13)
+54 verbose stack     at EventEmitter.emit (events.js:172:7)
+54 verbose stack     at ChildProcess.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\spawn.js:24:14)
+54 verbose stack     at emitTwo (events.js:87:13)
+54 verbose stack     at ChildProcess.emit (events.js:172:7)
+54 verbose stack     at maybeClose (internal/child_process.js:821:16)
+54 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+55 verbose pkgid client@1.0.0
+56 verbose cwd C:\Users\alexp\OneDrive\Documents\Clases\2016\I Periodo\Progra IV\SCAN\gitScan3\scan-frontend
+57 error Windows_NT 10.0.10586
+58 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+59 error node v4.2.6
+60 error npm  v2.14.12
+61 error code ELIFECYCLE
+62 error client@1.0.0 postinstall: `bower install && gulp index`
+62 error Exit status 1
+63 error Failed at the client@1.0.0 postinstall script 'bower install && gulp index'.
+63 error This is most likely a problem with the client package,
+63 error not with npm itself.
+63 error Tell the author that this fails on your system:
+63 error     bower install && gulp index
+63 error You can get their info via:
+63 error     npm owner ls client
+63 error There is likely additional logging output above.
+64 verbose exit [ 1, true ]
+>>>>>>> MejorasGenerales

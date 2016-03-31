@@ -2,7 +2,9 @@
 /bower_components
 
 #porLaMalditaMacDeMelvin
-
 .DS_Store
+
+#debug
+npm-debug.log
 
 
