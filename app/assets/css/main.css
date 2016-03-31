@@ -126,7 +126,10 @@
 	font-size: 1.15em;
 	color: white !important;
 }
-
+.labelPerfil{
+	font-size: 1.15em;
+	color: white;
+}
 .labelInfoPersonal{
 	font-size: 1.15em !important;
 }
