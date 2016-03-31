@@ -1,11 +1,12 @@
+
 #logoPrincipal{
 	max-width: 30%;
+	max-height: 30%;
 	width: 13%;
 	margin-left: 2%;
 }
-
-
 	.divPerfil{
+	margin-left: 10%;
 	width: 100%;
 	min-width: 60%;
 	max-width: 90%;
@@ -45,6 +46,7 @@
 @media screen and (max-width: 500px){
 
 	#imgPerfil{
+		margin-left: 10px;
 		width: 75%;
 	}
 	.divvernoticia{
