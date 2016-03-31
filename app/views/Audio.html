@@ -1,13 +1,14 @@
-<div ng-controller="ScanController" >
-  <div id="detector" class="vague">
-    <div class="pitch"><span id="pitch">--</span>Hz</div>
+<div  id="bodyAudio"ng-controller="ScanController" >
+  <div id="divAudio" class="col-md-4 col-md-offset-2">
+        <img id="recordImg" onclick="toggleLiveInput()" src="../images/recordrojo.png" alt="" height="280px"/>
+  </div>
+  <div id="detector" class=" vague col-md-4">
+    <div class="pitch"><span id="pitch"></span>Hz</div>
     <div class="note"><span id="note">--</span></div>
     <div id="detune"><span id="detune_amt">--</span><span id="flat">cents &#9837;</span><span id="sharp">cents &#9839;</span></div>
-  </div>-->
-  <div>
-    <p>
-      <button onclick="toggleLiveInput()">microfono</button>
-    </p>
   </div>
-  <canvas id="output" width=700 height=200></canvas>
+<div class="partitura ">
+  <canvas id="output" width="1000%" height="200"></canvas>
+</div>
+
 </div>
