@@ -2,17 +2,19 @@
 @import url(font-awesome.min.css);
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Raleway:400,800,900");
 
-
+#divcito{
+	text-align: center;
+}
 /* home COMIENZO*/
 #dviPerfilHome{
-
+	margin-left: 5%;
 	background: transparent;
 	background-repeat:no-repeat;
 	background-size: 100% auto;
 	background-attachment: fixed;
 	background-position: center;
-	margin-top: 5%;
-	width: 30%;
+	margin-top: 10%;
+	width: 20%;
 	min-width: 10%;
 	max-width: 30%;
 	box-sizing: b6rder-box;
@@ -26,13 +28,14 @@
 #divNoticiasHome{
 	color: white;
 	border: solid 2px rgba(160, 160, 160, 0.65);
-	background: url(../../images/background2.png);
+	/*background: url(../../images/background2.png);*/
+	background-color: rgba(0,0,0,0.9);
 	opacity: 0.8;
 	background-repeat:no-repeat;
 	background-size: 100% auto;
 	background-attachment: fixed;
 	background-position: center 0;
-	margin-top: 7%;
+	margin-top: 10%;
 	padding-bottom: 3%;
 	height: 90%;
 	max-height: 95%;
@@ -166,7 +169,7 @@
 #contenidopestanas{
 		text-decoration: none;
     background: transparent;
-    border: 3px solid #460606;
+    border: 2px solid rgba(255, 255, 255, 0.5);
 		border-left: 0px;
 		color: white;
 }
@@ -177,12 +180,13 @@
 }
 
 #pestanas #pestana2{
-  background: #460606;
+  background: rgba(255, 255, 255, 0);
 }
 
 #pestanas #pestana3{
-  background: #460606;
+  background: rgba(255, 255, 255, 0);
 }
+
 
 /* PESTAÑAS FIN*/
 
@@ -190,14 +194,15 @@
 	color: black !important;
 }
 .divPerfil{
-	background: url(../../images/background2.png);
+	/*background: url(../../images/background2.png);*/
+	background-color: rgba(0,0,0,0.6);
 	background-size: 100% auto;
 	opacity: 0.9;
 	height: 600px;
 	padding-top: 10px;
 	margin-top: 40px;
 	margin-bottom: 100px;
-	border: 2px solid rgba(172,32,45,0.8);
+	border: 1px solid rgba(0,0,0,0.8);
 }
 
 /* Perfil de usuario FIN */
@@ -355,8 +360,8 @@ input{
 	}
 
 	body {
-		background: url(../../images/imag4.png);
-		background-repeat:no-repeat;
+		background: url(../../images/imag6.png);
+		background-repeat:repeat;
 		background-size: 100% auto;
 		height: 100%;
 		background-attachment: fixed;
@@ -1948,7 +1953,8 @@ input{
 		-ms-transition: -ms-transform 0.5s ease, visibility 0.5s;
 		transition: transform 0.5s ease, visibility 0.5s;
 		-webkit-overflow-scrolling: touch;
-		background: url(../../images/background2.png);
+		background-color: rgba(0,0,0,0.9);
+		/*background: url(../../images/background2.png);*/
 		border-left: solid 1px rgba(160, 160, 160, 0.3);
 		box-shadow: none;
 		height: 100%;

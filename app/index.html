@@ -12,7 +12,9 @@
   <div  ng-controller="NavbarController">
     <nav id="Navbar" class="main">
       <div class=" row container-fluid" >
-        <img id="logoPrincipal" src="images/scan-blanco.png" alt="logo" height="100px">
+          <a ng-controller="ScanController" ng-click="changeview('/home')">
+            <img id="logoPrincipal" src="images/scan-blanco.png" alt="logo" height="150px">
+          </a>
         <div class="navbar-header pull-right">
           <form class="navbar-form navbar-right" role="search">
             <div id="opcionesNav" class="form-group" ng-show="!$sessionStorage.currentUser">
@@ -22,8 +24,8 @@
               <button type="submit" class="btn btn-default" ng-click="register()">Registrarse</button>
             </div>
             <div class="row">
-              <a class="fa-bars" href="#menu" ng-show="$sessionStorage.currentUser">
-              <img id="imagMenu" src="images/list_bullets.ico" alt="menu" height="30px">
+              <a id ="Menuq" href="#menu" ng-show="$sessionStorage.currentUser" src="images/menu1.png">
+                <img id="imagMenu" src="images/menu1.png" alt="menu" width="50px">
               </a>
             </div>
           </form>
@@ -52,18 +54,18 @@
           </a>
         </li>
         <li>
-          <a href="#">
-            <h3 class="Hmenu">Mis amigos</h3>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <h3 class="Hmenu">Biblioteca</h3>
+          <a>
+            <h3 class="Hmenu" ng-click="changeview('/audio')">Crear partitura</h3>
           </a>
         </li>
         <li>
           <a ng-click="changeview('/audio')">
-            <h3 class="Hmenu">Crear partitura</h3>
+            <h3 class="Hmenu" >Biblioteca</h3>
+          </a>
+        </li>
+        <li>
+          <a >
+            <h3 class="Hmenu">Mis Amigos</h3>
           </a>
         </li>
       </section>

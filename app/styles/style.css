@@ -1,32 +1,67 @@
-#logoPrincipal{
-	max-width: 30%;
-	min-width: 13%;
-	width: 13%;
-	margin-left: 2%;
+.partitura{
+	margin-bottom: 5%;
+	margin-left: 17%;
+}
+
+#bodyAudio{
+	margin-top: 10%;
 }
 
 
+#logoPrincipal{
+
+	margin-left: 2%;
+}
 	.divPerfil{
-	width: 70%;
+	margin-left: 10%;
+	width: 100%;
 	min-width: 60%;
 	max-width: 90%;
 	box-sizing: border-box;
 	height: 100% !important;
 	padding-bottom: 5% !important;
-	margin-top: 7% !important;
+	margin-top: 15% !important;
+}
+@media screen and (max-width: 800px){
+	#partitura{
+		margin-left: 5% !important;
+		padding-left: 5% !important;
+	}
+	#detector{
+		width: 90% !important;
+		margin-left: 5%;
+	}
+	#divAudio{
+		margin-top: 5%;
+		width: 90%;
+	}
+		margin-left: 2%;
 }
 @media screen and (max-width: 1000px){
+	#divAudio{
+		margin-top: 20%;
+		width: 40%;
+		margin-left: 5%;
+	}
+	#detector{
+		width: 50% !important;
+	}
+
 	.divPerfil{
 		margin-top: 15% !important;
-		margin-left: 10%;
+		padding-left: 0%;
+		margin-left: 0%;
+		width: 80% ;
+	}
+	#imgRegistro{
+		margin-left: 2%;
+		margin-right: 10%;
+		width: 60%;
 	}
 	#PerfilBasico{
 		margin-top: 5%;
 		width: 100%;
-		margin-left: 25%;
-	}
-	#imgPerfil{
-		width: 50%;
+		margin-left: 10%;
 	}
 	#pestanasC{
 		margin-left: 5%;
@@ -37,16 +72,64 @@
 #divregistro{
 	width: 70%;
 	margin-left: 20%;
+	box-sizing: border-box;
 }
 
-@media screen and (max-width: 1600px){
-	.logoRegistro{
+@media screen and (max-width: 500px){
+
+	#imgPerfil{
+		margin-left: 10px;
+		width: 75%;
+	}
+	.divvernoticia{
+		width: 100% !important;
+	}
+	.vernoticia{
+		width: 80% !important;
+	}
+	.buttonSpecial{
+		width: 40%;
+	}
+
+	body {
+		background: url(../../images/imag7.png) !important;
+		background-repeat:repeat !important;
+		height: 100%;
+		background-attachment:scroll !important;
+		background-position: center !important;
+	}
+	#dviPerfilHome{
+		margin-top: 20% !important;
+	}
+	#divNoticiasHome{
+		margin-left: 10% !important;
+	}
+	#divregistro{
+		width: 100% !important;
+		}
+		#logoPrincipal{
+			width: 100% !important;
+		}
+		#opcionesNav{
+			width: 100% !important;
+		}
+		#pestana2{
+			width: 100%
+		}
+		#pestana3{
+			width: 100%
+		}
+}
+
+
+@media screen and (max-width: 1500px){
+
 		#divregistro{
 			width: 70%;
-			margin-left: 5%;
-			margin-right: 5%;
-
+			margin-left: 20%;
 		}
+	#logoPrincipal{
+		width: 20%;
 	}
 	.registroLabel{
 		width: 80%;
@@ -57,7 +140,7 @@
 		width: 70%;
 	}
 	.inputRegistro{
-		width: 100%;
+		width: 20%;
 	}
 }
 
@@ -67,23 +150,22 @@
 		width: 90%;
 	}
 	.logoRegistro{
-		margin-left: 25%;
+		margin-left: 20%;
+		width: 120%;
 	}
 	#divregistro{
-		width: 80%;
-		margin-left: %;
-		margin-right: %;
+		width: 90%;
+		padding-right: 10%;
 	}
 	.buttonSpecial{
-		margin-left: 40%;
-		margin-top: 10%;
+
 	}
 	.registroLabel{
 		width: 100%;
 		margin-left: %;
 	}
 	.inputRegistro{
-		width: 100%;
+		width: 90%;
 	}
 }
 
@@ -94,7 +176,7 @@
 
 	}
 	#logoPrincipal{
-		width: 18%;
+		width: 50%;
 	}
 	#opcionesNav{
 		width: 50%;
@@ -111,9 +193,7 @@
 	#Navbar{
 		width: 100%;
 	}
-	#logoPrincipal{
-		width: 100%;
-	}
+
 	#opcionesNav{
 		width: 100%;
 	}
@@ -128,12 +208,13 @@
 
 @media screen and (max-width: 1000px){
 	#divNoticiasHome{
-		width: 30%;
+		width: 80%;
 		margin: 20%;
+		box-sizing: border-box;
 	}
 	#dviPerfilHome{
-		width: 40%;
-		padding:5% 5% 5% 45%;
+		width: 90%;
+		padding:5% 0% 0% 45%;
 		margin: 2px;
 	}
 }
@@ -149,11 +230,11 @@
 	background-color: #348781
 }
 div.confident {
-	margin-top: 150px;
+	margin-top: 1%;
 	color: white;
 }
 div.vague {
-	margin-top: 150px;
+	margin-top: 2%;
 	color: lightgrey;
 }
 #note {
@@ -161,7 +242,9 @@ div.vague {
 }
 
 #detector {
-	width: 300px; height: 300px; border: 4px solid gray; border-radius: 8px; text-align: center; padding-top: 10px;
+	width: 30%; height: 260px; border: 4px solid gray; border-radius: 8px; text-align: center;
+	margin-bottom: 2%;
+	margin: 1%;
 }
 #flat {
 	display: none;
@@ -201,11 +284,14 @@ div.vague {
 	background: url(../../images/background2.png);
 	background-size: 100% auto;
 	opacity: 0.9;
-	height: 60% !important;
-	padding-top: 10px;
-	margin-top: 40px;
+	height: 90% !important;
+	margin-top: 10%;
+	padding-top: 10%;
 	margin-bottom: 100px;
 	border: 2px solid rgba(172,32,45,0.8);
+	padding-right: 0px;
+	margin-right: 5%;
+
 }
 
 #imgPerfil{
@@ -213,11 +299,14 @@ div.vague {
 }
 
 #editarPerfil{
-	margin-top: 20px;
 	background:transparent;
+	height: 190%;
+	margin-bottom: 20%;
 }
 
 #divImagEditar{
+	padding-right: 0px;
+	margin-right: 0px;
 	margin-bottom: 40px;
 	margin-left: 15px;
 }
@@ -319,6 +408,11 @@ div.vague {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	color: rgba(172,32,45,.9);
+
+	margin-left: 10%;
+	margin-right: 0%;
+	width: 90%;
+	margin-top: 10%;
 }
 .buttonSpecial:hover{
 	font-size: 1.4em;
