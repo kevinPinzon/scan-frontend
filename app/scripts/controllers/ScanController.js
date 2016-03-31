@@ -45,7 +45,12 @@ angular.module('AngularScaffold.Controllers')
   $scope.getFriends = function(){
     ScanService.listMyFriends($sessionStorage.currentUser).then(function(response){
       $sessionStorage.currentUser.friends = response.data;
-      init();
+      for (var i = 0; i < $response.data.length; i++) {
+        var data = {_id: String($response.data[i])};
+        ScanService.GetUser(data).then(function(response){
+          $scope.friends.push(response.data);
+        });
+      }
     });
   }
   $scope.GuardarPerfil = function(){
