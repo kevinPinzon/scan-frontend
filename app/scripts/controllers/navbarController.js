@@ -33,7 +33,6 @@ angular.module('AngularScaffold.Controllers')
           window.location.reload();
       }
       $scope.postUser = function(){
-        alert($scope.user.name.first);
         $scope.user.scope="regular";
         authService.PostUser($scope.user).then(function(response){
         alert("usuario creado");
