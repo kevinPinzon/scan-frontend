@@ -9,7 +9,7 @@ angular.module('AngularScaffold.Controllers')
           $sessionStorage.$reset();
           $location.path('/welcome');
         }).catch(function(err){
-          alert(err.data.error + " " + err.data.message);
+          alert('logged out ERROR');
         })
       }
 
@@ -39,7 +39,7 @@ angular.module('AngularScaffold.Controllers')
         alert("usuario creado");
         $location.path('/welcome');
         }).catch(function(err){
-          alert(err.data.error + " " + err.data.message);
+          alert("No se pudo crear usuario, intente otro username o correo");
         });
       }
   }]);
