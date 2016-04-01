@@ -37,10 +37,10 @@ angular.module('AngularScaffold.Controllers')
   }
   $scope.addFriend = function(){
     ScanService.addFriend({username: $scope.friendUsername}).then(function(response){
-      
+      $scope.getFriends();
       alert(response.data);
     })
-    $scope.getFriends();
+    
   }
   $scope.getFriends = function(){
     ScanService.listMyFriends($sessionStorage.currentUser).then(function(response){
